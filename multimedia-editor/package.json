@@ -1,0 +1,32 @@
+{
+  "name": "multimedia-editor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "npx tsx server/index.ts",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "test": "npx tsx src/core/test_qc_ai_filter.ts && npx tsx src/core/test_core_engine.ts && npx tsx src/core/test_ai_orchestrator.ts && npx tsx src/core/test_ai_reconstruction.ts && npx tsx src/core/test_backend_generative.ts",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/core": "^8.5.3",
+    "idb": "^8.0.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.88.0",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.4"
+  }
+}
