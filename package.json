@@ -1,0 +1,7 @@
+{
+  "name": "multimedia-editor-hybrid",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix multimedia-editor install && npm --prefix multimedia-editor run build"
+  }
+}
