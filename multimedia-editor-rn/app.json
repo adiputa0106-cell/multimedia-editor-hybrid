@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "MediaEditor",
+    "slug": "multimedia-editor-rn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mediaeditor.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Aplikasi membutuhkan akses galeri untuk membuka dan menyimpan foto dan video.",
+        "NSPhotoLibraryAddUsageDescription": "Aplikasi membutuhkan akses galeri untuk menyimpan hasil ekspor foto dan video."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0D0D0F"
+      },
+      "permissions": [
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "package": "com.mediaeditor.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Aplikasi membutuhkan akses galeri untuk membuka foto."
+        }
+      ]
+    ]
+  }
+}

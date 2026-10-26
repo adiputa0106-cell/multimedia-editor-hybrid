@@ -25,6 +25,7 @@ const apkMimePlugin = (): Plugin => ({
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [react(), apkMimePlugin()],
   preview: {
     host: true,
